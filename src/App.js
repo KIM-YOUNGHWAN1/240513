@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
-// import logo from './logo.svg';
 import './App.css';
 import Template from './Components/Template';
 import TodoList from './Components/TodoList';
+import { MdAddCircle } from 'react-icons/md';
+import TodoInsert from './Components/TodoInsert';
+
+let nextId = 4;
 
 const App = () => {
+  const [insertToggle, setInsertToggle] = useState(false);
   const [todos, setTodos] = useState([
     {
       id: 1,
@@ -14,19 +18,46 @@ const App = () => {
     {
       id: 2,
       text: "sigoto 2",
-      checked: true
+      checked: false
     },
     {
       id: 3,
       text: "sigoto 3",
       checked: true
-    },
+    }
+  ]);
+  const onInsertToggle = () => {
+    setInsertToggle(Prev => !Prev);
+  };
+  const onInsertTodo = (text) =>{
+    if (text === "") {
+      return alert('할 일 입력 app.jp.')
+    } else {
+      const todo = {
+        id: nextId,
+        text,
+        checked: false
+      };
+      setTodos(todos => todos.concat(todo) );
+      nextId++;
+    }
+  };
 
 
-  ])
-  return <Template> 
-    <TodoList />
-  </Template>
+  return (
+    <Template todoLength = {todos.length}> 
+      <TodoList todos={todos} />
+      <div className="add-todo-button" onClick={onInsertToggle}>
+        <MdAddCircle />
+      </div>
+      {insertToggle && (
+        <TodoInsert 
+          onInsertToggle = {onInsertToggle} 
+          onInsertTodo = {onInsertTodo}
+      />
+    )}
+    </Template>
+  );
 };
 
 
