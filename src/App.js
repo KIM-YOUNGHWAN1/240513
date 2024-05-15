@@ -5,6 +5,23 @@ import TodoList from './Components/TodoList';
 import { MdAddCircle } from 'react-icons/md';
 import TodoInsert from './Components/TodoInsert';
 
+
+// import React, { useState } from 'react';
+// 함수를 사용할 경우에 usesate Hook을 사용해서 변수 선언 가능
+// 기존에 사용하던 클래스 컴포넌트의 this.state와 동일하다.
+
+////////////////////////////////////////////////////////////////////////////
+// 
+// 
+// 
+// 
+// 
+////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
 let nextId = 4;
 
 const App = () => {
@@ -27,6 +44,21 @@ const App = () => {
       checked: true
     }
   ]);
+
+
+
+
+////////////////////////////////////////////////////////////////////////////
+// 
+// 
+// 
+// 
+// 
+////////////////////////////////////////////////////////////////////////////
+
+
+
+
 
   const onInsertToggle = () => {
     if (selectedTodo) {
@@ -75,6 +107,17 @@ const App = () => {
 
 
 
+
+////////////////////////////////////////////////////////////////////////////
+// 
+// 
+// 
+// 
+// 
+////////////////////////////////////////////////////////////////////////////
+
+
+
   return (
     <Template todoLength={todos.length}> 
       <TodoList 
@@ -86,6 +129,7 @@ const App = () => {
       <div className="add-todo-button" onClick={onInsertToggle}>
         <MdAddCircle />
       </div>
+
 
       {insertToggle && (
         <TodoInsert 
