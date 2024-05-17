@@ -2,7 +2,6 @@
     position: fixed;
     z-index: 1000;
     top: 0;
-    left: 0;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -10,7 +9,19 @@
     align-items: center;
     background: #6c567b;
     opacity: 0.8;
+    left: 0;
 }
+
+
+
+/* position: relative;
+/* 메세지 입력창을 백그라운드 기준으로 상대적으로 위치시킴 */
+/* z-index: 1001; */
+/* 메세지 입력창을 백그라운드보다 위에 나타나도록 함 */
+
+/* 정말로 중요함.  */
+/* 백그라운드 이미지가 메세지 박스보다 위에 오면 클릭 자체가 불가능 */
+
 
 form {
     position: relative;
@@ -19,30 +30,37 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    max-width: 300px;
+    width: 80%; /* 화면의 80%에 해당하는 너비로 설정 */
+    max-width: 250px; /* 최대 너비 설정 */
     height: 150px;
     border-radius: 5px;
     box-shadow: 1px 2px 5px 1px #020f3cc9;
     background: white;
 }
 
-form > input {
+
+
+
+
+
+form>input {
     background: none;
     outline: none;
     border: none;
     border-bottom: 1px solid #8600e0;
+    /* 인풋에서 박스 선, 눈에 보이게 보라색 설정 */
     padding: 0.5rem;
     font-size: 1.125rem;
     line-height: 1.5;
 }
 
-form > button {
+form>button {
     padding-top: 20px;
     background: none;
     outline: none;
     border: none;
     color: rgb(85, 18, 156);
+    /* 버튼 이미지 색 설정, 선이랑 어울리게 */
     padding-left: 1rem;
     padding-right: 1rem;
     font-size: 1.5rem;

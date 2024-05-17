@@ -3,20 +3,20 @@
     flex-direction: column;
     justify-content: center; /* 세로 방향 중앙 정렬 */
     align-items: center;     /* 가로 방향 중앙 정렬 */
-    height: 100vh;           /* 부모 요소의 높이를 전체 화면 높이로 설정 */
+    height: 60vh;           /* 부모 요소의 높이를 전체 화면 높이로 설정 */
     padding-top: 20px;
 }
 
 .title {
     width: 50vw; /* 박스의 너비를 50vw로 설정 */
-    max-width: 150px; /* 최대 너비를 설정 */
+    max-width: 500px; /* 최대 너비를 설정 */
     padding-bottom: 20px;
     font-size: 1.5rem;
     font-weight: bold;
     color: #000000;
     text-align: center; /* 오늘의 할일 문구를 가운데 이동 */
     margin-top: 150px;  /* 여기에서는 오늘의 할 일 글씨, 헤더와 안 겹치게 함*/
-    margin: 150px auto 0;  /* 가로 중앙 정렬, 상단에 150px 마진 */
+    margin: 150px auto 150;  /* 가로 중앙 정렬, 상단에 150px 마진 */
 
     border-radius: 5px;
     /* border: 2px solid #ae0808;  박스 테두리 */
