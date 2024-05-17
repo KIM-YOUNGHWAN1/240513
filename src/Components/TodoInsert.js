@@ -37,10 +37,14 @@ const TodoInsert = ({
     <div>
       <div className="background" onClick={onInsertToggle}></div>
       <form onSubmit={onSubmit}>
+        {/* ///form이 메세지 창임, 새로뜨는 창 */}
         <input placeholder="적어주세요" value={value} onChange={onChange} />
         {selectedTodo ? (
           <div className="rewrite">
-            <TiPencil
+            <TiPencil />
+            <TiTrash />
+
+            {/* <TiPencil
               onClick={() => {
                 onUpdate(selectedTodo.id, value);
               }}
@@ -49,10 +53,14 @@ const TodoInsert = ({
               onClick={() => {
                 onRemove(selectedTodo.id);
               }}
-            />
+            /> */}
           </div>
         ) : (
-          <button type="submit"></button>
+          <button type="submit">
+            <MdAddCircle />
+            <TiPencil />
+            <TiTrash />
+          </button>
         )}
       </form>
     </div>

@@ -109,15 +109,15 @@ const App = () => {
         todoLength={todos.length}
         clickedTodoCount={todos.clickedTodoCount}
       >
+        <div className="add-todo-button" onClick={onInsertToggle}>
+          <MdAddCircle /> 생성하기
+        </div>
         <TodoList
           todos={todos}
           onCheckToggle={onCheckToggle}
           onInsertToggle={onInsertToggle}
           onChangeSelectedTodo={onChangeSelectedTodo}
         />
-        <div className="add-todo-button" onClick={onInsertToggle}>
-          <MdAddCircle />
-        </div>
         {insertToggle && (
           <TodoInsert
             SelectedTodo={selectedTodo}

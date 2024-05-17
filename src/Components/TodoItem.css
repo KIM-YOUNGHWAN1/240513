@@ -6,10 +6,10 @@
     border-radius: 5px;
     box-shadow: 1px 2px 5px 1px #530cc584;
     padding: 10px;
-    /* 패딩 값 변경 */
+
     display: flex;
     align-items: center;
-    max-width: 150px; /* 최대 길이 150으로 설정 */
+    max-width: 500px; /* 최대 길이 150으로 설정 */
     width: 100%; /* 가로 100%로 설정*/
 }
 

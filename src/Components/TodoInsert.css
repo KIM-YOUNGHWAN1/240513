@@ -14,6 +14,11 @@
 
 
 
+
+
+
+
+
 /* position: relative;
 /* 메세지 입력창을 백그라운드 기준으로 상대적으로 위치시킴 */
 /* z-index: 1001; */
@@ -44,6 +49,7 @@ form {
 
 
 form>input {
+    
     background: none;
     outline: none;
     border: none;
@@ -55,7 +61,8 @@ form>input {
 }
 
 form>button {
-    padding-top: 20px;
+    
+    padding-top: 10px;
     background: none;
     outline: none;
     border: none;
@@ -63,9 +70,10 @@ form>button {
     /* 버튼 이미지 색 설정, 선이랑 어울리게 */
     padding-left: 1rem;
     padding-right: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: flex;
-    align-items: center;
+    align-items: ;
     cursor: pointer;
     transition: 0.1s background ease-in;
 }
+

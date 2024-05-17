@@ -1,11 +1,13 @@
 .add-todo-button {
   position: fixed;
-  right: -5px;
-  bottom: 1;
+  right: 230px;
+  bottom: 500;
   z-index: 100;
   width: 100px;
   height: 100px;
   cursor: pointer;
-  font: 5rem;
-  color: #31b40d;
+  font: 500rem;
+  color: #bd072c;
 }
+
+/* 우측에 있는 생성 버튼임. 하나만 남겨둠 */
