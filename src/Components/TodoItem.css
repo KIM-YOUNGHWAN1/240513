@@ -1,12 +1,16 @@
 .TodoItem {
+    margin-top: 20px;
+    /* 박스 아이템임. 기준인 top(오늘의 할일 글씨) 이것과의 거리를 계산  */
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
-    box-shadow: 1px 2px 5px 1px #f67280;
+    box-shadow: 1px 2px 5px 1px #530cc584;
     padding: 10px;
-    /* 적절한 패딩 값으로 변경 */
+    /* 패딩 값 변경 */
     display: flex;
     align-items: center;
+    max-width: 150px; /* 최대 길이 150으로 설정 */
+    width: 100%; /* 가로 100%로 설정*/
 }
 
 .TodoItem+.TodoItem {
@@ -22,9 +26,9 @@
 
 .content svg {
     font-size: 1rem;
-    color: #9372f6;
+    color: #d10a2f;
 }
-
+/* color: #db1d3d; */
 .content .text {
     margin-left: 10px;
     /* 적절한 마진 값으로 변경 */
@@ -32,7 +36,7 @@
 }
 
 .content.checked .text {
-    color: #6c567d;
+    color: #d10a2f;
     text-decoration: line-through;
     cursor: pointer;
     /* opacity: 0.6; */
