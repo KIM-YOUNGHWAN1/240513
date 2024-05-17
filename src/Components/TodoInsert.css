@@ -72,8 +72,7 @@ form>button {
     padding-right: 1rem;
     font-size: 2rem;
     display: flex;
-    align-items: ;
+    align-items: center;
     cursor: pointer;
     transition: 0.1s background ease-in;
 }
-
