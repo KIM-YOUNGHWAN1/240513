@@ -16,7 +16,14 @@ export const FooterContainer = styled.div`
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #020f3cc9;
+
+  // background-color: #020f3cc9;
+  // 불투명함. 쓰면 안됨
+
+  // 완전히 불투명하게 만들기
+  background-color: #020f3cff;
+  // ff가 완전히 불투명
+
   z-index: 1000;
   border-top: 5px solid #000000;
 `;

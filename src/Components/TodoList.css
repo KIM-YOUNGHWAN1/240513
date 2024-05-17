@@ -1,6 +1,30 @@
 .TodoList {
+    position: relative; /* 상대적 위치 설정, 생성될 때 움직이지 않게 설정했음, 지워볼 것 */
     width: 90vw;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
 }
+
+.pagination {
+  position: fixed; /* 페이지 버튼을 고정 위치로 설정 */
+  bottom: 50px; /*페이지 버튼 을 고정시켜야 하니까 위치 아ㄴ래부터 */
+  left: 50%; /* 가운데 정렬 위치 설정,,,,왼쪽 */
+  transform: translateX(-50%); /* 가운데 정렬 이동 */
+  display: flex;
+}
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .pagination button:hover {
+    background-color: #ddd;
+  }
+  

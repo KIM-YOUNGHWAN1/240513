@@ -52,9 +52,7 @@ const TodoInsert = ({
             />
           </div>
         ) : (
-          <button type="submit">
-            <MdAddCircle />
-          </button>
+          <button type="submit"></button>
         )}
       </form>
     </div>
